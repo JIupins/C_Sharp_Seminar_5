@@ -21,11 +21,10 @@ double[] InitializingArray(string phrase)
 
 void FindDiffBetweenMinMax(double[] arr)
 {
-    double max = arr[0];
-    double min = arr[0];
+    double max = arr[0]; // Или просто так: double max = arr.Max();
+    double min = arr[0]; // Или просто так: double min = arr.Min();
 
     for (int i = 0; i < arr.Length; i++) if (max < arr[i]) max = arr[i];
-
     for (int i = 0; i < arr.Length; i++) if (min > arr[i]) min = arr[i];
 
     Console.Write($"Разница между максимальным значением массива {max} и его минимальным значением {min} равна: {(max - min):0.00}");
