@@ -3,7 +3,7 @@
 
 Console.Clear();
 
-int initialData(string phrase)
+int InitialData(string phrase)
 {
     Console.Write(phrase);
     int value = Convert.ToInt32(Console.ReadLine());

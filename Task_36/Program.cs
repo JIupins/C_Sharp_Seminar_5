@@ -2,7 +2,7 @@
 
 Console.Clear();
 
-int initialData(string phrase)
+int InitialData(string phrase)
 {
     Console.Write(phrase);
     int value = Convert.ToInt32(Console.ReadLine());
@@ -21,7 +21,7 @@ int[] CreateSomeArray(int qtyElem, int botBord, int uppBord)
     return Ary;
 }
 
-void WriteSumHonestValuesArray(int[] nArr)
+void WriteSumNohonestValuesArray(int[] nArr)
 {
     int buff = default;
 
@@ -46,4 +46,4 @@ int[] newArray = new int[quantityElements];
 
 newArray = CreateSomeArray(quantityElements, bottomBorder, upperBorder);
 
-WriteSumHonestValuesArray(newArray);
+WriteSumNohonestValuesArray(newArray);
